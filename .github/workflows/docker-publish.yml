@@ -71,6 +71,10 @@ jobs:
       - name: Build and push
         uses: docker/bake-action@master
         with:
+          files: |
+            ./docker-bake.hcl
+            ${{ steps.meta.outputs.bake-file }}
+          targets: build
           push: true
 
       # Build and push Docker image with Buildx (don't push on PR)
