@@ -1,4 +1,5 @@
-FROM php:7.4-apache
+ARG  DOCKER_TAG=latest
+FROM php:${DOCKER_TAG}
 LABEL maintainer="Winter CMS <hello@wintercms.com> (@wintercms)"
 
 # Enables apache rewrite w/ security
