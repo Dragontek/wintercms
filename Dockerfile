@@ -1,4 +1,4 @@
-ARG  DOCKER_TAG=latest
+ARG  DOCKER_TAG=7-apache
 FROM php:${DOCKER_TAG}
 LABEL maintainer="Winter CMS <hello@wintercms.com> (@wintercms)"
 
