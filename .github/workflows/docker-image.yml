@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dragontek/wintercms:$(date +%s)
+      run: docker build . --build-arg DOCKER_TAG=7-apache --file Dockerfile --tag dragontek/wintercms:7-apache
