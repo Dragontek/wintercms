@@ -24,6 +24,7 @@ services:
     restart: always
     environment:
       APP_DEBUG: 'false'
+      DB_CONNECTION: mysql
       DB_HOST: db
       DB_DATABASE: winter
       DB_USERNAME: winter
